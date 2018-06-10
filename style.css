@@ -24,3 +24,31 @@ html {
     font-size: 10px;
     background: linear-gradient(45deg, rgb(3, 255, 234), rgb(255, 245, 157));
   }
+
+  #survey-div {
+    background: rgb(241, 240, 227);
+    padding: 3rem;
+    display: inline-block;
+    border-radius: 1%;
+    min-width: 40vw;
+  }
+
+  body {
+       text-align: center;
+  }
+
+  .form-div {
+      padding: 2rem 0 2rem 0;
+  }
+
+  .left-column {
+    float: left;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  .right-column {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
