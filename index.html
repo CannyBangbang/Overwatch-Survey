@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- file should be named 'index.html'-->
 <html lang="en">
 
 <head>
@@ -16,28 +15,25 @@
     <form id='survey-form'>
       <div class='form-div'>
         <div class='left-column'>
-          <label id="name-label">Name:</label>
+          <label id="name-label">*Name:</label>
         </div>
         <div class='right-column'>
-          <input type="text" name="name" placeholder="Enter your name">
+          <input id='name' class='text-form' type="text" name="name" placeholder="Enter your name" required>
         </div>
       </div>
       <div class='left-column'>
-        <label id="email-label">Email:</label>
+        <label id="email-label">*Email:</label>
       </div>
-      <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
       <div class='right-column'>
-        <input type="text" name="email" placeholder="Enter your email">
+        <input id='email' class='text-form' type="email" name="email" placeholder="Enter your email" required>
       </div>
       <div class='form-div'>
         <div class='left-column'>
-          <label id="number-label">Age:</label>
+          <label id="number-label">*Age:</label>
         </div>
         <div class='right-column'>
-          <input type="text" name="NUMBER" placeholder="Enter your age">
+          <input id='number' class='text-form' type="number" name="age" placeholder="Enter your age" min="1" max="140" required>
         </div>
-        <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
-                                                                User Story #9: If I enter numbers outside the range of the number input, I will see an HTML5 validation error.-->
       </div>
       <div class='form-div'>
         <div class='left-column'>
@@ -58,13 +54,13 @@
           <label id="radio-label">How many years have you been playing Overwatch?</label>
         </div>
         <div class='right-column'>
-          <input type="radio" name="RADIO" value="less1" checked> Less than 1 year
+          <input type="radio" name="year" value="less1" checked> Less than 1 year
           <br>
-          <input type="radio" name="RADIO" value="1year"> 1 Year
+          <input type="radio" name="year" value="1year"> 1 Year
           <br>
-          <input type="radio" name="RADIO" value="2year"> 2 Years
+          <input type="radio" name="year" value="2year"> 2 Years
           <br>
-          <input type="radio" name="RADIO" value="3year"> 3 Years
+          <input type="radio" name="year" value="3year"> 3 Years
         </div>
       </div>
       <div class='form-div'>
@@ -104,10 +100,10 @@
           <label id="comment-label">Any Comments or Suggestions?</label>
         </div>
         <div class='right-column'>
-          <textarea name="comments" rows="6" cols="50">Please let us know if you have any additional comments or suggestions!</textarea>
+          <textarea class='comment-form' name="comments" rows="5" cols="28">Please let us know if you have any additional comments or suggestions!</textarea>
         </div>
         <div id='submit-div'>
-          <input type="submit" value="Submit">
+          <input id='submit' type="submit" value="Submit">
         </div>
       </div>
     </form>

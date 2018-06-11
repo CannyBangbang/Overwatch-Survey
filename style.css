@@ -1,54 +1,101 @@
 @media screen and (max-width: 767px) {
-    body {
-        font-size: 1.2em;
-    }
+  body {
+    font-size: 1.2em;
+  }
+  .text-form {
+    width: 80%;
+  }
+  .comment-form {
+    width: 80%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    body {
-        font-size: 1.4em;
-    }
+  body {
+    font-size: 1.4em;
+  }
+  .text-form {
+    width: 75%;
+  }
+  .comment-form {
+    width: 75%;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-    body {
-        font-size: 1.6em;
-    }
+  body {
+    font-size: 1.6em;
+  }
+  .text-form {
+    width: 70%;
+  }
+  .comment-form {
+    width: 75%;
+}
 }
 @media screen and (min-width: 1200px) {
-    body {
-        font-size: 1.8em;
-    }
+  body {
+    font-size: 1.8em;
+  }
+  .text-form {
+    width: 55%;
+  }
+  .comment-form {
+    width: 75%;
+}   
 }
 
 html {
-    font-family: "Arimo", sans-serif;
-    font-size: 10px;
-    background: linear-gradient(45deg, rgb(3, 255, 234), rgb(255, 245, 157));
-  }
+  font-family: "Arimo", sans-serif;
+  font-size: 10px;
+  background: linear-gradient(0deg, rgb(24, 27, 27), rgb(79, 92, 92));
+}
 
-  #survey-div {
-    background: rgb(241, 240, 227);
-    padding: 3rem;
-    display: inline-block;
-    border-radius: 1%;
-    min-width: 40vw;
-  }
+#survey-div {
+  background: rgb(241, 240, 227);
+  padding: 3rem;
+  display: inline-block;
+  border-style: groove;
+  border-color: rgb(245, 180, 39);
+  border-width: 3px;
+  border-radius: 1%;
+  min-width: 40vw;
+}
 
-  body {
-       text-align: center;
-  }
+body {
+  text-align: center;
+}
 
-  .form-div {
-      padding: 2rem 0 2rem 0;
-  }
+.form-div {
+  padding: 2rem 0 2rem 0;
+}
 
-  .left-column {
-    float: left;
-    text-align: right;
-    vertical-align: top;
-  }
+.left-column {
+  width: 32%;
+  float: left;
+  text-align: right;
+  vertical-align: top;
+  margin-left: 10%;
+}
 
-  .right-column {
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-  }
+.right-column {
+  width: 52%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+#title {
+  color: rgb(245, 180, 39);
+}
+
+#submit {
+  background-color: rgb(245, 180, 39);
+  opacity: 0.85;
+  font-size: 1em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  margin-top: 1.5em;
+  border-radius: 7px;
+}
+
+#submit:hover {
+  opacity: 1;
+}
